@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body id="myBody">
     <!-- header -->
     <header class="bgDarkLight">
         <nav class="navbar navbar-expand-lg container">
@@ -79,20 +79,15 @@
                             <!-- /search -->
                         </li>
                     </ul>
+                    <!-- dark light -->
+                    <div class="mx-auto ms-3">
+                        <button class="btn" id="switchButton" title="Click to switch theme">
+                            <i class="fa-regular fa-sun sun"></i>
+                            <i class="fa-regular fa-moon moom"></i>
+                        </button>
+                    </div>
+
                 </div>
-                <!-- <div class="mobile-position DarkandLight">
-                    <nav class="navigation">
-                        <div class="theme-switch-wrapper">
-                            <label class="theme-switch" for="checkbox">
-                                <input type="checkbox" id="checkbox">
-                                <div class="mode-container">
-                                    <i class="fa-regular fa-sun sun"></i>
-                                    <i class="fa-regular fa-moon moom"></i>
-                                </div>
-                            </label>
-                        </div>
-                    </nav>
-                </div> -->
             </div>
         </nav>
     </header>
@@ -342,6 +337,8 @@
     <script src="./js/jquery.countup.js"></script>
     <script>$('.counter').countUp();
     </script>
+
+    <script src="./js/style.js"></script>
 </body>
 
 </html>
