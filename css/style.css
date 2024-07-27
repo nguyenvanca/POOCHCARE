@@ -1,5 +1,7 @@
+/* Start Pricing CSS */
 #pricing{
     background-color: rgba(147, 107, 232, 0.05);;
+    margin: 40px auto;
 }
 
 #pricing .row{
@@ -87,4 +89,56 @@
     background-color: white;
     color: #189a46;
     border-radius: 5px;
+}
+/* End Pricing CSS */
+
+/* Start Video Popup CSS */
+#video_popup .container{
+    padding: 20px 10%;
+}
+
+.videoPopup__content img{
+    width: 100%;
+}
+
+.videoPopup__content{
+    position: relative;
+}
+
+.videoPopup__content a{
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 50px);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #fff;
+    color: #189a46;
+    border-radius: 50%;
+    animation: ripple 1s linear infinite;
+    transition: 0.3s;
+}
+
+.videoPopup__content a:hover{
+    transform: scale(1.2);
+}
+
+.videoPopup__content img{
+    border-radius: 10px;
+}
+
+
+/* End Video Popup CSS */
+
+/* Animation */
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 rgba(15, 162, 66, 0.164), 0 0 0 10px rgba(15, 162, 67, 0.25), 0 0 0 20px rgba(15, 162, 67, 0.25);
+    }
+    
+    100% {
+        box-shadow: 0 0 0 10px rgba(15, 162, 67, 0.25), 0 0 0 20px rgba(15, 162, 67, 0.25), 0 0 0 40px rgba(50, 100, 245, 0);
+    }
 }
