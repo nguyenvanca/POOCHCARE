@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -14,6 +14,8 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -21,27 +23,278 @@
 <body>
     <!-- header -->
     <header>
-
+        <nav class="navbar navbar-expand-lg container">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    Pooch Care
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars icon-expand "></i>
+                    <i class="fa-sharp fa-solid fa-xmark icon-close"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">Dropdown</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav search-right mt-lg-0 mt-2 ms-3">
+                        <li class="nav-item HeaderSearch" title="Search">
+                            <a href="#search" class="btn search-search">
+                                <span class="fa fa-search" aria-hidden="true"></span>
+                            </a>
+                            <!-- search  -->
+                            <div id="search" class="pop-overlay">
+                                <div class="search-popup">
+                                    <form class="d-flex">
+                                        <input class="form-control p-2 inputSearch" type="search" name="s"
+                                            placeholder="Search.." required="required" autofocus="">
+                                        <button class="btn btn-success btnSearch" type="submit">Search</button>
+                                        <a class="close" href="#url">×</a>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- /search -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="mobile-position DarkandLight">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="fa-regular fa-sun sun"></i>
+                                    <i class="fa-regular fa-moon moom"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div> -->
+            </div>
+        </nav>
     </header>
     <!-- main slider -->
-    <section>
+    <section id="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/banner1.jpg" alt="...">
+                    <div class="carousel-caption text-start container-fluid">
+                        <h5 class="h1 ">Quality Things for Loving Pets
+                        </h5>
+                        <p class="h4">Keeps your Pet Smiling</p>
+                        <button class="btn btn-style btn-white mt-sm-5 mt-4 mr-2">Read More</button>
+                        <button class="btn btn-style btn-border mt-sm-5 mt-4 mr-2">Contact Us</button>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="./img/banner2.jpg" alt="...">
+                    <div class="carousel-caption text-start container-lg ms-auto">
+                        <h5 class="h1 ">Quality Things for Loving Pets
+                        </h5>
+                        <p class="h4">Keeps your Pet Smiling</p>
+                        <button class="btn btn-style btn-white mt-sm-5 mt-4 mr-2">Read More</button>
+                        <button class="btn btn-style btn-border mt-sm-5 mt-4 mr-2">Contact Us</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/banner3.jpg" alt="...">
+                    <div class="carousel-caption text-start container-fluid ">
+                        <h5 class="h1 ">Quality Things for Loving Pets
+                        </h5>
+                        <p class="h4">Keeps your Pet Smiling</p>
+                        <button class="btn btn-style btn-white mt-sm-5 mt-4 mr-2">Read More</button>
+                        <button class="btn btn-style btn-border mt-sm-5 mt-4 mr-2">Contact Us</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/banner4.jpg" alt="...">
+                    <div class="carousel-caption text-start  container-lg ms-auto">
+                        <h5 class="h1 ">Quality Things for Loving Pets
+                        </h5>
+                        <p class="h4">Keeps your Pet Smiling</p>
+                        <button class="btn btn-style btn-white mt-sm-5 mt-4 mr-2">Read More</button>
+                        <button class="btn btn-style btn-border mt-sm-5 mt-4 mr-2">Contact Us</button>
+                    </div>
+                </div>
 
+            </div>
+        </div>
     </section>
     <!-- Home Page About -->
-    <section>
-
+    <section id="aboutUs">
+        <div class="container text-center">
+            <p class="text-danger tracking-tighter">ABOUT US</p>
+            <h1 class="fw-bolder">We Love Your Pets Like They Are Our Own</h1>
+            <p>pLorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur
+                consequatur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                Nulla
+                mollis dapibus nunc, ut rhoncus turpis sodales quis.</p>
+            <a href="#" class="text-decoration-none aboutUsReadMore">Read More</a>
+        </div>
     </section>
     <!-- Home Page Service -->
-    <section>
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <div>
+                                <i class="fa-solid fa-snowflake fs-3 pt-2 pb-3"></i>
+                            </div>
+                            <a class="card-title text-decoration-none h4 ">Dog Walking</a>
+                            <p class="card-text pt-3">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
+                                laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.</p>
+                            <a href="#" class="text-decoration-none aboutUsReadMore">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <div>
+                                <i class="fa-solid fa-snowflake fs-3 pt-2 pb-3"></i>
+                            </div>
+                            <a class="card-title text-decoration-none h4 ">Dog Walking</a>
+                            <p class="card-text pt-3">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
+                                laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.</p>
+                            <a href="#" class="text-decoration-none aboutUsReadMore">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <div>
+                                <i class="fa-solid fa-snowflake fs-3 pt-2 pb-3"></i>
+                            </div>
+                            <a class="card-title text-decoration-none h4 ">Dog Walking</a>
+                            <p class="card-text pt-3">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
+                                laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.</p>
+                            <a href="#" class="text-decoration-none aboutUsReadMore">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <div>
+                                <i class="fa-solid fa-snowflake fs-3 pt-2 pb-3"></i>
+                            </div>
+                            <a class="card-title text-decoration-none h4 ">Dog Walking</a>
+                            <p class="card-text pt-3">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
+                                laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.</p>
+                            <a href="#" class="text-decoration-none aboutUsReadMore">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <div>
+                                <i class="fa-solid fa-snowflake fs-3 pt-2 pb-3"></i>
+                            </div>
+                            <a class="card-title text-decoration-none h4 ">Dog Walking</a>
+                            <p class="card-text pt-3">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
+                                laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.</p>
+                            <a href="#" class="text-decoration-none aboutUsReadMore">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <div>
+                                <i class="fa-solid fa-snowflake fs-3 pt-2 pb-3"></i>
+                            </div>
+                            <a class="card-title text-decoration-none h4 ">Dog Walking</a>
+                            <p class="card-text pt-3">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
+                                laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.</p>
+                            <a href="#" class="text-decoration-none aboutUsReadMore">Read More</a>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </div>
     </section>
     <!-- Home Page Content -->
-    <section>
-
+    <section id="content">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6  pl-lg-5 mb-lg-0 mb-5 contentLeft ms-lg-5">
+                    <img src="./img/ab.jpg" alt="">
+                </div>
+                <div class="col-12 col-lg-6 contentRight">
+                    <p class="text-danger">WHY CHOOSE US</p>
+                    <h1>What We Offer For You</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.Lorem ipsum dolor sit amet,
+                        consectetur adipisicingelit.</p>
+                    <ul>
+                        <li class="p-2"><i class="fa fa-check"></i>Certified Groomer </li>
+                        <li class="p-2"><i class="fa fa-check"></i>10 Years of Experience </li>
+                        <li class="p-2"><i class="fa fa-check"></i>Pet Lover </li>
+                        <li class="p-2"><i class="fa fa-check"></i>Customer Supports </li>
+                        <li class="p-2"><i class="fa fa-check"></i>Veterinary Help </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Home Page Start -->
-    <section>
-
+    <section id="numberStar">
+        <div class="container">
+            <div class="row text-center justify-content-around">
+                <div class="col-6 col-lg-3 numberItem">
+                    <h1 class="counter text-white fw-bold">730</h1>
+                    <p class="text-white">Happy Clients</p>
+                </div>
+                <div class="col-6 col-lg-3 numberItem">
+                    <h1 class="counter text-white fw-bold">80</h1>
+                    <p class="text-white ">Professionals</p>
+                </div>
+                <div class="col-6 col-lg-3 numberItem">
+                    <h1 class="counter text-white fw-bold">812</h1>
+                    <p class="text-white ">Adopted Pets</p>
+                </div>
+                <div class="col-6 col-lg-3 numberItem">
+                    <h1 class="counter text-white fw-bold">90</h1>
+                    <p class="text-white ">Awards</p>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Home Page Pricing -->
     <section>
@@ -64,6 +317,19 @@
 
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/jquery.countup.js"></script>
+    <script>$('.counter').countUp();
+    </script>
 </body>
 
 </html>
