@@ -25,15 +25,23 @@
     <header class="bgDarkLight">
         <nav class="navbar navbar-expand-lg container">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand flex-grow-1" href="#">
                     Pooch Care
                 </a>
+                <!-- dark light -->
+                <div class="mx-auto ms-3 me-1 darkLight">
+                    <button class="btn" id="switchButton" title="Click to switch theme">
+                        <i class="fa-regular fa-sun sun fs-4"></i>
+                        <i class="fa-regular fa-moon moom fs-4"></i>
+                    </button>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars icon-expand "></i>
                     <i class="fa-sharp fa-solid fa-xmark icon-close"></i>
                 </button>
+
                 <div class="collapse navbar-collapse bgDarkLight" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
                         <li class="nav-item clDarkLight">
@@ -79,16 +87,10 @@
                             <!-- /search -->
                         </li>
                     </ul>
-                    <!-- dark light -->
-                    <div class="mx-auto ms-3">
-                        <button class="btn" id="switchButton" title="Click to switch theme">
-                            <i class="fa-regular fa-sun sun"></i>
-                            <i class="fa-regular fa-moon moom"></i>
-                        </button>
-                    </div>
-
                 </div>
+
             </div>
+
         </nav>
     </header>
     <!-- main slider -->

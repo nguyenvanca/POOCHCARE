@@ -152,7 +152,6 @@ button.navbar-toggler .icon-close {
 /* Darkand Light */
 #switchButton {
   background-color: white;
-  border: 1px solid black;
 }
 #switchButton .fa-sun {
   display: none;
@@ -166,7 +165,6 @@ button.navbar-toggler .icon-close {
 }
 .dark #switchButton {
   background-color: black;
-  border: 1px solid white;
 }
 .dark #switchButton .fa-sun {
   display: block;
@@ -391,6 +389,10 @@ button.navbar-toggler .icon-close {
 /* responsive */
 
 @media (min-width: 992px) {
+  .darkLight {
+    order: 2;
+  }
+
   #carousel .carousel-item > img {
     height: calc(100vh - 90px);
     max-height: none;
