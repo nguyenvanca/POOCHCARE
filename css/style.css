@@ -386,8 +386,127 @@ button.navbar-toggler .icon-close {
 #numberStar .numberItem p {
   opacity: 0.6;
 }
-/* responsive */
+/* Start Pricing CSS */
+#pricing {
+  background-color: rgba(147, 107, 232, 0.05);
+  margin: 40px auto;
+}
 
+#pricing .row {
+  margin: 3rem 5rem 0;
+}
+
+#pricing .pricing__card {
+  padding: 50px;
+  margin: 50px 0px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+#pricing .pricing__top {
+  margin-bottom: 40px;
+}
+
+.pricing__bottom ul {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-bottom: 2rem;
+  font-size: 18px;
+}
+
+.pricing__bottom li {
+  padding: 5px 0;
+  margin-top: 5px;
+}
+
+.pricing__top h4 {
+  font-size: 40px;
+  color: #189a46;
+}
+
+.pricing__top label {
+  font-size: 25px;
+  vertical-align: text-top;
+}
+
+.pricing__top span {
+  font-size: 18px;
+  opacity: 0.8;
+  font-weight: 400;
+  color: #000;
+}
+
+.pricing__bottom button {
+  border: none;
+  padding: 10px 30px;
+  border-radius: 8px;
+  background: #189a46;
+  color: #fff;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.pricing__bottom button:hover {
+  background-color: #116e32;
+}
+
+#pricing .pricing__card_middle {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+  border-radius: 10px;
+  background-color: #fff;
+  z-index: 1;
+}
+/* Start Video Popup */
+#video_popup .container{
+  margin: 80px auto;
+  padding: 0px 15%;
+}
+.videoPopup__content {
+  position: relative;
+}
+
+.videoPopup__content a {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 50px);
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #fff;
+  color: #189a46;
+  border-radius: 50%;
+  animation: ripple 1s linear infinite;
+  transition: 0.3s;
+}
+
+.videoPopup__content a:hover {
+  transform: scale(1.2);
+}
+
+.videoPopup__content img {
+  width: 100%;
+  border-radius: 10px;
+}
+/* Start Testimonials */
+#testimonial .container{
+  /* margin: 80px auto; */
+  /* padding: 0px 15%; */
+}
+/* keyframe */
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(15, 162, 66, 0.164),
+      0 0 0 10px rgba(15, 162, 67, 0.25), 0 0 0 20px rgba(15, 162, 67, 0.25);
+  }
+
+  100% {
+    box-shadow: 0 0 0 10px rgba(15, 162, 67, 0.25),
+      0 0 0 20px rgba(15, 162, 67, 0.25), 0 0 0 40px rgba(50, 100, 245, 0);
+  }
+}
+/* responsive */
 @media (min-width: 992px) {
   .darkLight {
     order: 2;
