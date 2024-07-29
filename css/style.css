@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 /* header */
+header{
+  /* position: fixed; */
+}
 header .navbar-toggler {
   font-size: 16px;
   background: #189a46;
@@ -203,6 +206,7 @@ button.navbar-toggler .icon-close {
 .dark .bgService {
   background-color: #222222;
 }
+
 
 /* carousel */
 #carousel .carousel-item > img {
