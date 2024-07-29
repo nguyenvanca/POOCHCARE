@@ -581,21 +581,51 @@ button.navbar-toggler .icon-close {
 }
 /* Start Footer */
 footer{
-  background-color: #000;
-  color: #fff;
+  background-color: #111;
+  color: #404040;
 }
 footer .row{
-  padding: 0px 80px;
+  padding: 60px;
 }
-
+footer .item__header{
+  color: #fff;
+  margin-bottom: 30px;
+}
+.item__social li{
+  font-size: 16px;
+  margin-right: 20px;
+}
+footer li{
+  margin: 10px 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+footer li:hover a{
+  text-decoration: underline;
+  color: #fff;
+}
 footer ul{
   padding: 0;
   list-style: none;
 }
 
-footer a{
+footer a,
+footer span{
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
+  transition: .3s;
+}
+.footer__copyright{
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+}
+.footer__copyright p{
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer__copyright a{
+  transition: .3s;
+}
+.footer__copyright a:hover{
+  text-decoration: underline;
 }
 /* keyframe */
 @keyframes ripple {
