@@ -464,8 +464,14 @@ button.navbar-toggler .icon-close {
 /* Start Video Popup */
 #video_popup .container {
   margin: 80px auto;
-  padding: 0px 15%;
+  padding: 0px 10%;
 }
+.videoPopup__header p,
+.sub__header p{
+  font-size: 1.2em;
+  opacity: 0.8;
+}
+
 .videoPopup__content {
   position: relative;
 }
@@ -499,9 +505,11 @@ button.navbar-toggler .icon-close {
   background-color: rgba(147, 107, 232, 0.05);
 }
 
-#testimonial .container {
-  /* margin: 80px auto; */
-  /* padding: 0px 15%; */
+.testimonial__carousel{
+   padding-bottom: 10% !important;
+}
+.testimonial__header{
+  padding: 80px 0 50px;
 }
 #testimonial .item__image img {
   margin-right: 25px;
@@ -534,6 +542,42 @@ button.navbar-toggler .icon-close {
 
 .testimonial__carousel .item__image{
   margin: 20px 25px 50px;
+}
+.slick-dots {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.slick-dots button{
+  padding: 0px 2px;
+  margin: 10px 20px 0px;
+  border-radius: 50%;
+}
+
+/* Start Subscribe */
+.sub__content{
+  margin: 5% 25%;
+}
+.sub__form input{
+  flex-basis: 70%;
+  height: 60px;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.sub__form button{
+  flex-basis: 28%;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: #189a46;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.sub__form button:hover{
+  background: #116e32;
 }
 /* keyframe */
 @keyframes ripple {
