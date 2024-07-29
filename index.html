@@ -514,8 +514,10 @@
           <h6 class="text-danger fw-normal text-uppercase">
             Better pet nutrition
           </h6>
-          <h1 class="mb-3">The Finest Fresh Food And All Your Pet Needs.</h1>
-          <p>
+          <h1 class="mb-3 fw-bold">
+            The Finest Fresh Food And All Your Pet Needs.
+          </h1>
+          <p class="px-2">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum
             dolor sit amet elit consec tetur adipisi elit. Lorem ipsum dolor sit
             amet elit consec tetur adipisi elit. Iure voluptatibus explicabo
@@ -542,9 +544,9 @@
       <div class="container">
         <div class="testimonial__header text-center">
           <h6 class="text-danger fw-normal text-uppercase">Testimonials</h6>
-          <h1 class="mb-3">Happy Clients & Feedbacks</h1>
+          <h1 class="mb-3 fw-bold">Happy Clients & Feedbacks</h1>
         </div>
-        <div class="testimonial__carousel row p-5 m-5">
+        <div class="testimonial__carousel row px-5 mx-5">
           <div class="testimonial__item col-6">
             <div class="item__content">
               <blockquote>
@@ -681,7 +683,24 @@
       </div>
     </section>
     <!-- Subscribe -->
-    <section></section>
+    <section id="subscribe">
+      <div class="container">
+        <div class="sub__content">
+          <div class="sub__header text-center">
+            <h1 class="fw-bold">Stay Updated!</h1>
+            <p class="px-5 mb-5 mt-3">
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus
+              turpis sodales quis. Integer sit amet mattis quam.
+            </p>
+          </div>
+          <div class="sub__form d-flex flex-wrap justify-content-between">
+            <input type="email" placeholder="Enter your email ..." />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Footer -->
     <footer></footer>
 
@@ -727,11 +746,13 @@
       $(document).ready(function () {
         $(".testimonial__carousel").slick({
           // setting-name: setting-value
+          autoplay: true,
+          autoplaySpeed: 2000,
           dots: false,
           infinite: false,
           speed: 300,
           slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
           arrows: false,
         });
       });
