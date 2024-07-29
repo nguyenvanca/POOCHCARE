@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 /* header */
-header{
-  /* position: fixed; */
-}
 header .navbar-toggler {
   font-size: 16px;
   background: #189a46;
@@ -207,7 +204,18 @@ button.navbar-toggler .icon-close {
   background-color: #222222;
 }
 
-
+.dark .bgPricing{
+  background-color: #000 !important;
+}
+.dark .pricing__card__dark{
+  background-color: #151515 !important;
+}
+.dark .pricing__text__white{
+  color: white
+}
+.dark .pricing__text__wopacity{
+  color: #afafaf;
+}
 /* carousel */
 #carousel .carousel-item > img {
   display: block;
@@ -398,7 +406,7 @@ button.navbar-toggler .icon-close {
 /* Start Pricing CSS */
 #pricing {
   background-color: rgba(147, 107, 232, 0.05);
-  margin: 40px auto;
+  padding: 40px auto;
 }
 
 #pricing .row {
@@ -413,7 +421,7 @@ button.navbar-toggler .icon-close {
 }
 
 #pricing .pricing__top {
-  margin-bottom: 40px;
+  padding: 40px;
 }
 
 .pricing__bottom ul {
@@ -465,6 +473,18 @@ button.navbar-toggler .icon-close {
   background-color: #fff;
   z-index: 1;
 }
+.pricing__card_middle .pricing__top.active{
+  background: #189a46;
+  border-radius: 10px 10px 0px 0px;
+}
+.pricing__card_middle .pricing__top.active h5{
+  margin: 0px 90px 40px;
+  background: #fff;
+  color: #189a46;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 11px;
+}
 /* Start Video Popup */
 #video_popup .container {
   margin: 80px auto;
@@ -506,7 +526,7 @@ button.navbar-toggler .icon-close {
 }
 /* Start Testimonials */
 #testimonial{
-  background-color: rgba(147, 107, 232, 0.05);
+  background: rgba(147, 107, 232, 0.05);
 }
 
 .testimonial__carousel{
@@ -546,6 +566,9 @@ button.navbar-toggler .icon-close {
 
 .testimonial__carousel .item__image{
   margin: 20px 25px 50px;
+}
+.item__decs .pricing__text__white{
+  font-size: 20px;
 }
 .slick-dots {
   display: flex;
