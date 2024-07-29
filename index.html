@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>POOCHCARE</title>
-
+    <!-- BootStrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-
+    <!-- FontAweSome CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -19,20 +19,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <!-- FancyBox CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
     />
-
-    <!-- animate css -->
+    <!-- Animate CSS-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <!-- slick css -->
+    <!-- Slick CSS-->
     <link rel="stylesheet" href="./slick-1.8.1/slick-1.8.1/slick/slick.css" />
-
+    <!-- Our CSS -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
@@ -772,7 +771,10 @@
       </div>
     </footer>
     <!-- Button on top -->
-     <button></button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa fa-angle-up text-white"></i>
+    </button>
+    <!-- Javascript -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -825,6 +827,27 @@
           arrows: false,
         });
       });
+    </script>
+    <!-- Button Move On Top JS -->
+    <script>
+      let myButton = document.querySelector("#myBtn");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          myButton.style.display = "block";
+        } else {
+          myButton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
     </script>
     <script src="./js/style.js"></script>
   </body>

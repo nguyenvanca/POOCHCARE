@@ -627,6 +627,23 @@ footer span{
 .footer__copyright a:hover{
   text-decoration: underline;
 }
+/* Start Button Move On Top */
+#myBtn{
+  display: none;
+  position: fixed;
+  bottom: 10%;
+  right: 2%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #189a46;
+  border: 0;
+  cursor: pointer;
+  transition: .5s;
+}
+#myBtn:hover{
+  transform: translateY(-20px);
+}
 /* keyframe */
 @keyframes ripple {
   0% {
