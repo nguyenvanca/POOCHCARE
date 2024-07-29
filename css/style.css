@@ -579,6 +579,24 @@ button.navbar-toggler .icon-close {
 .sub__form button:hover{
   background: #116e32;
 }
+/* Start Footer */
+footer{
+  background-color: #000;
+  color: #fff;
+}
+footer .row{
+  padding: 0px 80px;
+}
+
+footer ul{
+  padding: 0;
+  list-style: none;
+}
+
+footer a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
 /* keyframe */
 @keyframes ripple {
   0% {
