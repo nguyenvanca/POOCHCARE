@@ -431,14 +431,14 @@ button.navbar-toggler .icon-close {
 }
 
 #pricing .pricing__card {
-  padding: 50px;
+  padding: 10px;
   margin: 50px 0px;
   border-radius: 10px;
   background-color: #fff;
 }
 
 #pricing .pricing__top {
-  padding: 40px;
+  padding: 20px 0px;
 }
 
 .pricing__bottom ul {
@@ -456,6 +456,9 @@ button.navbar-toggler .icon-close {
 .pricing__top h4 {
   font-size: 40px;
   color: #189a46;
+}
+.pricing__top h3 {
+  padding: 0;
 }
 
 .pricing__top label {
@@ -478,6 +481,7 @@ button.navbar-toggler .icon-close {
   color: #fff;
   font-size: 18px;
   transition: 0.3s;
+  margin-bottom: 10%;
 }
 
 .pricing__bottom button:hover {
@@ -495,11 +499,11 @@ button.navbar-toggler .icon-close {
   border-radius: 10px 10px 0px 0px;
 }
 .pricing__card_middle .pricing__top.active h5{
-  margin: 0px 90px 40px;
+  margin: 20px 80px 40px;
   background: #fff;
   color: #189a46;
   font-size: 16px;
-  padding: 10px;
+  padding: 5px;
   border-radius: 11px;
 }
 /* Start Video Popup */
@@ -601,7 +605,7 @@ button.navbar-toggler .icon-close {
 
 /* Start Subscribe */
 .sub__content{
-  margin: 5% 25%;
+  margin: 5% 15%;
 }
 .sub__form input{
   flex-basis: 70%;
@@ -726,5 +730,35 @@ footer span{
   #content .contentLeft {
     max-width: 50%;
     width: 40%;
+  }
+}
+
+@media (max-width: 992px) {
+  #pricing .container{
+    padding: 0 3%;
+  }
+  #pricing .pricing__header{
+    width: 100%;
+    display: block;
+  }
+  #pricing .pricing__card{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+  #pricing .pricing__card_middle{
+    width: 100%;
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .pricing__card .pricing__bottom{
+    margin-bottom: 40px;
+  }
+  .pricing__card_middle .pricing__bottom{
+    margin-bottom: 40px;
+  }
+  .pricing__card_middle .pricing__top.active h5{
+    margin: 20px 25% 40px;
   }
 }
