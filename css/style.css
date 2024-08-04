@@ -426,6 +426,10 @@ button.navbar-toggler .icon-close {
   padding: 40px auto;
 }
 
+#pricing .container{
+  padding: 100px 0px;
+}
+
 #pricing .row {
   margin: 3rem 5rem 0;
 }
@@ -592,17 +596,12 @@ button.navbar-toggler .icon-close {
   font-size: 20px;
 }
 .slick-dots {
-  display: flex;
-  list-style: none;
-  justify-content: center;
+  bottom: 60px;
+  right: 10px;
 }
-
-.slick-dots button{
-  padding: 0px 2px;
-  margin: 10px 20px 0px;
-  border-radius: 50%;
+.slick-arrow{
+  display: none !important;
 }
-
 /* Start Subscribe */
 .sub__content{
   margin: 5% 15%;
@@ -735,21 +734,21 @@ footer span{
 
 @media (max-width: 992px) {
   #pricing .container{
-    padding: 0 3%;
+    padding: 10% 3%;
   }
   #pricing .pricing__header{
     width: 100%;
     display: block;
   }
   #pricing .pricing__card{
-    margin: 0;
-    width: 100%;
+    margin: 0 auto;
+    width: 98%;
     padding: 0;
   }
   #pricing .pricing__card_middle{
     width: 100%;
     padding: 0;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
   }
 
   .pricing__card .pricing__bottom{
@@ -760,5 +759,11 @@ footer span{
   }
   .pricing__card_middle .pricing__top.active h5{
     margin: 20px 25% 40px;
+  }
+  footer .row{
+    display: block;
+  }
+  footer .footer__item.col-6{
+    width: 100%;
   }
 }
