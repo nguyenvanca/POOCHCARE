@@ -604,7 +604,11 @@ button.navbar-toggler .icon-close {
 }
 /* Start Subscribe */
 .sub__content{
-  margin: 5% 15%;
+  margin: 5% 8%;
+}
+#subscribe .sub__header,
+#subscribe .sub__form{
+  margin: 20px 20%;
 }
 .sub__form input{
   flex-basis: 70%;
